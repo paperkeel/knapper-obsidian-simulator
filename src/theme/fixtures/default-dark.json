@@ -1,0 +1,143 @@
+{
+	"documentClasses": [
+		"auto-full-screen",
+		"is-floating-nav",
+		"is-frameless",
+		"is-hidden-frameless",
+		"is-maximized",
+		"knapper-test-session",
+		"mod-linux",
+		"obsidian-app",
+		"show-inline-title",
+		"show-ribbon",
+		"show-view-header",
+		"styled-scrollbars",
+		"theme-dark"
+	],
+	"geometry": {
+		"settings": {
+			"height": 1000,
+			"width": 1034,
+			"x": 57,
+			"y": 133
+		},
+		"sidebar": {
+			"height": 1236,
+			"width": 300,
+			"x": 848,
+			"y": 30
+		},
+		"tabs": {
+			"height": 1236,
+			"width": 504,
+			"x": 344,
+			"y": 30
+		}
+	},
+	"icons": {
+		"settings": {
+			"name": "settings",
+			"svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"svg-icon sidebar-toggle-button-icon\"><rect x=\"1\" y=\"2\" width=\"22\" height=\"20\" rx=\"4\"></rect><rect x=\"4\" y=\"5\" width=\"2\" height=\"14\" rx=\"2\" fill=\"currentColor\" class=\"sidebar-toggle-icon-inner\"></rect></svg>",
+			"viewBox": "0 0 24 24"
+		}
+	},
+	"mode": "dark",
+	"provenance": {
+		"capturedAt": "2026-08-16T16:22:12.472Z",
+		"obsidianVersion": "1.12.7",
+		"platform": "Linux x86_64",
+		"source": "knapper"
+	},
+	"schemaVersion": 1,
+	"selectors": {
+		".app-container": {
+			"classes": ["app-container"],
+			"geometry": {
+				"height": 1266,
+				"width": 1148,
+				"x": 0,
+				"y": 0
+			}
+		},
+		".modal": {
+			"classes": ["modal", "mod-settings", "mod-sidebar-layout"],
+			"geometry": {
+				"height": 1000,
+				"width": 1034,
+				"x": 57,
+				"y": 133
+			}
+		},
+		".workspace": {
+			"classes": [
+				"workspace",
+				"is-left-sidedock-open",
+				"is-right-sidedock-open"
+			],
+			"geometry": {
+				"height": 1236,
+				"width": 1148,
+				"x": 0,
+				"y": 30
+			}
+		},
+		".workspace-leaf-content": {
+			"classes": ["workspace-leaf-content"],
+			"geometry": {
+				"height": 1153,
+				"width": 300,
+				"x": 44,
+				"y": 70
+			}
+		},
+		".workspace-split.mod-right-split": {
+			"classes": [
+				"workspace-split",
+				"mod-horizontal",
+				"mod-sidedock",
+				"mod-right-split"
+			],
+			"geometry": {
+				"height": 1236,
+				"width": 300,
+				"x": 848,
+				"y": 30
+			}
+		},
+		".workspace-tab-header-container": {
+			"classes": ["workspace-tab-header-container"],
+			"geometry": {
+				"height": 40,
+				"width": 300,
+				"x": 44,
+				"y": 30
+			}
+		},
+		".workspace-tabs": {
+			"classes": ["workspace-tabs", "mod-top", "mod-top-left-space"],
+			"geometry": {
+				"height": 1193,
+				"width": 300,
+				"x": 44,
+				"y": 30
+			}
+		}
+	},
+	"variables": {
+		"--background-modifier-border": "#363636",
+		"--background-primary": "#1e1e1e",
+		"--background-secondary": "#262626",
+		"--font-interface": "'??', '??', '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, \"Segoe UI\", \"Google Sans Flex\", Roboto, \"Inter Variable\", \"Inter\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", sans-serif",
+		"--font-monospace": "'??', '??', ui-monospace, SFMono-Regular, \"Cascadia Mono\", \"Roboto Mono\", \"DejaVu Sans Mono\", \"Liberation Mono\", Menlo, Monaco, \"Consolas\", \"Source Code Pro\", monospace",
+		"--font-text": "'??', '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, \"Segoe UI\", \"Google Sans Flex\", Roboto, \"Inter Variable\", \"Inter\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", sans-serif",
+		"--interactive-accent": "hsl(258, 88%, 66%)",
+		"--interactive-accent-hover": "hsl(calc(258 - 3), calc(88% * 1.02), calc(66% * 1.15))",
+		"--radius-l": "12px",
+		"--radius-m": "8px",
+		"--radius-s": "4px",
+		"--text-faint": "#666666",
+		"--text-muted": "#b3b3b3",
+		"--text-normal": "#dadada",
+		"--text-on-accent": "white"
+	}
+}
