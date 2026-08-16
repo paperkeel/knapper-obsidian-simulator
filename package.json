@@ -1,6 +1,6 @@
 {
 	"name": "knapper-obsidian-simulator",
-	"version": "0.1.0",
+	"version": "0.1.1",
 	"description": "Run built Obsidian plugins in a persistent browser simulator.",
 	"private": false,
 	"license": "MIT",
@@ -52,6 +52,7 @@
 		"typecheck": "vp check --no-fmt --no-lint",
 		"theme:capture": "node scripts/theme/capture-knapper.mjs",
 		"theme:validate": "node scripts/theme/validate-theme.mjs src/theme/fixtures/default-light.json && node scripts/theme/validate-theme.mjs src/theme/fixtures/default-dark.json",
+		"icons:generate": "node scripts/icons/generate-lucide-nodes.mjs",
 		"ci": "pnpm run check && pnpm run test && pnpm run build"
 	},
 	"dependencies": {

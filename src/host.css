@@ -148,6 +148,16 @@
 	color: var(--text-normal);
 }
 
+.obsidian-host .svg-icon {
+	display: block;
+	width: var(--icon-size, 1em);
+	height: var(--icon-size, 1em);
+	flex: none;
+	fill: none;
+	stroke: currentColor;
+	stroke-width: var(--icon-stroke, 2);
+}
+
 .obsidian-host svg {
 	max-width: 100%;
 	stroke: currentColor;

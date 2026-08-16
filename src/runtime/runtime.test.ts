@@ -15,6 +15,7 @@ import {
 	Vault,
 	Workspace,
 	normalizePath,
+	setIcon,
 } from "./index";
 
 describe("runtime primitives", () => {
@@ -75,6 +76,17 @@ describe("runtime primitives", () => {
 		expect(setting.containerEl).toBe(document.body);
 		expect(menu.items[0]?.title).toBe("Run");
 		notice.hide();
+	});
+
+	it("renders built-in icons as bounded SVG elements", () => {
+		const host = document.createElement("span");
+		setIcon(host, "chevron-right");
+		const svg = host.querySelector("svg");
+		expect(host.textContent).toBe("");
+		expect(svg?.classList.contains("svg-icon")).toBe(true);
+		expect(svg?.getAttribute("width")).toBe("24");
+		expect(svg?.getAttribute("height")).toBe("24");
+		expect(svg?.getAttribute("viewBox")).toBe("0 0 24 24");
 	});
 });
 

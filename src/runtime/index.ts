@@ -1,3 +1,5 @@
+import { builtinIconNodes } from "./lucide-nodes";
+
 /** A disposable callback returned by an event subscription. */
 export class EventRef {
 	private active = true;
@@ -1053,12 +1055,37 @@ export function addIcon(name: string, svg: string): void {
 	iconRegistry.set(name, svg);
 }
 
-/** Render a registered icon or its name into an element. */
+/** Render a registered or built-in Obsidian icon into an element. */
 export function setIcon(element: HTMLElement, name: string): void {
 	const svg = iconRegistry.get(name);
-	if (svg)
-		element.innerHTML = `<svg viewBox="0 0 100 100" aria-hidden="true">${svg}</svg>`;
-	else element.textContent = name;
+	if (svg) {
+		element.innerHTML = `<svg class="svg-icon" width="24" height="24" viewBox="0 0 100 100" fill="none" stroke="currentColor" aria-hidden="true">${svg}</svg>`;
+		return;
+	}
+	const iconElement = document.createElementNS(
+		"http://www.w3.org/2000/svg",
+		"svg"
+	);
+	iconElement.setAttribute("class", "svg-icon");
+	iconElement.setAttribute("width", "24");
+	iconElement.setAttribute("height", "24");
+	iconElement.setAttribute("viewBox", "0 0 24 24");
+	iconElement.setAttribute("fill", "none");
+	iconElement.setAttribute("stroke", "currentColor");
+	iconElement.setAttribute("stroke-width", "2");
+	iconElement.setAttribute("stroke-linecap", "round");
+	iconElement.setAttribute("stroke-linejoin", "round");
+	iconElement.setAttribute("aria-hidden", "true");
+	for (const [tag, attributes] of builtinIconNodes[name] ?? []) {
+		const child = document.createElementNS(
+			"http://www.w3.org/2000/svg",
+			tag
+		);
+		for (const [key, value] of Object.entries(attributes))
+			child.setAttribute(key, value);
+		iconElement.append(child);
+	}
+	element.replaceChildren(iconElement);
 }
 
 /** Fetch a URL with Obsidian's response shape. */
