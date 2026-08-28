@@ -7,11 +7,11 @@
 	"author": "Bearfire",
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/bearfire-dev/knapper-obsidian-simulator.git"
+		"url": "git+https://github.com/paperkeel/knapper-obsidian-simulator.git"
 	},
-	"homepage": "https://github.com/bearfire-dev/knapper-obsidian-simulator#readme",
+	"homepage": "https://github.com/paperkeel/knapper-obsidian-simulator#readme",
 	"bugs": {
-		"url": "https://github.com/bearfire-dev/knapper-obsidian-simulator/issues"
+		"url": "https://github.com/paperkeel/knapper-obsidian-simulator/issues"
 	},
 	"keywords": [
 		"knapper",
