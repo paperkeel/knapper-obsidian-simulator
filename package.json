@@ -4,7 +4,7 @@
 	"description": "Run built Obsidian plugins in a persistent browser simulator.",
 	"private": false,
 	"license": "MIT",
-	"author": "Bearfire",
+	"author": "Paperkeel",
 	"repository": {
 		"type": "git",
 		"url": "git+https://github.com/paperkeel/knapper-obsidian-simulator.git"
