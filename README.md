@@ -2,7 +2,7 @@
 
 Run a built Obsidian plugin in a local browser shell. The simulator loads the standard release artifacts: `main.js`, `manifest.json`, and `styles.css`.
 
-This project complements [Knapper](https://github.com/bearfire-dev/knapper). Knapper tests plugins in live Obsidian instances. This simulator provides a faster browser workflow for local interface development.
+This project complements [Knapper](https://github.com/paperkeel/knapper). Knapper tests plugins in live Obsidian instances. This simulator provides a faster browser workflow for local interface development.
 
 The shell provides these surfaces:
 
